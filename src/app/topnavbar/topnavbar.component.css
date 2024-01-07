@@ -1,5 +1,5 @@
 .navbar {
-    height: 170px; /* Adjust height as needed */
+    height: 185px; /* Adjust height as needed */
     background-color: #f0f0f0; /* Optional background color */
     position: fixed; /* Keep navbar fixed at the top */
     top: 0;
@@ -29,10 +29,14 @@
   }
   .navbar-buttons {
     display: flex;
-    align-items: center; /* Vertically align buttons */
+    align-items: center; 
     position: absolute; /* Position buttons absolutely */
     right: 0; 
-    bottom: 0;/* Position buttons at the left edge */
+    bottom: 0;
+    
+  }
+  .navbar-button {
+    margin-right: 5px; 
   }
   
   
