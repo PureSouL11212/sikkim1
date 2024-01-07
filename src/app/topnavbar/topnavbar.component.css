@@ -1,0 +1,28 @@
+.navbar {
+    height: 100px; /* Adjust height as needed */
+    background-color: #f0f0f0; /* Optional background color */
+    position: fixed; /* Keep navbar fixed at the top */
+    top: 0;
+    width: 100%;
+    z-index: 100; /* Ensure navbar stays on top of other elements */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+  }
+  
+  .navbar-content {
+    display: flex;
+    flex-direction: column; /* Arrange image and text vertically */
+    align-items: center; /* Center the content vertically */
+  }
+  
+  .navbar-image {
+    width: 100px; /* Adjust image width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add spacing between image and text */
+  }
+  
+  .navbar-text {
+    font-size: 18px; /* Adjust text size as needed */
+  }
+  
