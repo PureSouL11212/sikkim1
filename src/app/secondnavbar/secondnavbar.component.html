@@ -1,14 +1,31 @@
-<!-- navbar.component.html -->
 
-<nav class="navbar">
-  <div class="nav-item" (mouseover)="showDropdown = false">Home</div>
-  <div class="nav-item dropdown" (mouseover)="showDropdown = true" (mouseout)="showDropdown = false">
-    Services
-    <div *ngIf="showDropdown" class="dropdown-content" (mouseover)="showDropdown = true" (mouseout)="showDropdown = false">
-      <div class="dropdown-item" (click)="selectService('Service 1')">Service 1</div>
-      <div class="dropdown-item" (click)="selectService('Service 2')">Service 2</div>
-      <div class="dropdown-item" (click)="selectService('Service 3')">Service 3</div>
+    
+    <title>Dropdown Menu</title>
+
+
+    <div class="container">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li class="nav-link">
+                    <a href="#">Home</a>
+                </li>
+                <li class="nav-link services">
+                    <a href="#">Services
+                       
+                    </a>
+                    <ul class="drop-down">
+                        <li>Service 1</li>
+                        <li>Service 2</li>
+                        <li>Service 3</li>
+                    </ul>
+                </li>
+                <li class="nav-link">
+                    <a href="#">About</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-  </div>
-  <div class="nav-item" (mouseover)="showDropdown = false">Contact</div>
-</nav>
+

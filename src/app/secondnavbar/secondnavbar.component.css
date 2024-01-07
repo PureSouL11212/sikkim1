@@ -1,43 +1,82 @@
-/* navbar.component.css */
 
+*{
+  width:auto;
+}
+.container {
+  display: flex; 
+  font-size: 14px;
+  text-align: center;
+  height: 10vh;
+  width: auto;
+  background: #d8d8d8;
+}
 .navbar {
+  margin: auto;
+  padding: 0.5rem 1.5rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
   display: flex;
-  background-color: #333;
-  color: white;
-  padding: 10px;
+  gap: 1rem;
 }
 
-.nav-item {
-  margin: 0 15px;
+.nav-link, .drop-down li {
+  list-style: none;
+  height: 100%;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
   cursor: pointer;
 }
 
-.dropdown {
-  position: relative;
+a {
+  text-decoration: none;
+  color: currentColor;
 }
 
-.dropdown-content {
-  display: none;
+.drop-down {
   position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #333;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  padding: 10px;
+  padding: 0.5rem 0;
+  margin: 0.5rem -0.5rem;
+  background: antiquewhite;
+  color: black;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  font-size: 12px;
+  display: none;
 }
 
-.dropdown-item {
-  padding: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+.nav-link:hover {
+  background-color: black;
+  color: #fff;
+  border-radius: 0.5rem;
 }
 
-.dropdown-item:hover {
-  background-color: #555;
-}
-
-/* Show dropdown content on hover */
-.dropdown:hover .dropdown-content {
+.services:hover .drop-down {
   display: block;
+}
+
+.services a {
+  display: flex;
+  align-items: center;
+}
+
+.services .dropdown-icon {
+  font-size: 18px;
+  position: relative;
+  right: -5px;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out all;
+}
+
+.services:hover .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+.drop-down li:hover {
+  background: black;
+  color: #fff;
+  border-radius: 0.5rem;
 }
