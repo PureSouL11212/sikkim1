@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./secondnavbar.component.css']
 })
 export class SecondnavbarComponent {
-
+  showDropdown = false;
+  selectService(service: string) {
+    // Add logic here to handle the selected service
+    console.log(`Selected service: ${service}`);
+  }
 }

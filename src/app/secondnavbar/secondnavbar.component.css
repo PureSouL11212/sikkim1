@@ -1,0 +1,43 @@
+/* navbar.component.css */
+
+.navbar {
+  display: flex;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+.nav-item {
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.dropdown-item {
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dropdown-item:hover {
+  background-color: #555;
+}
+
+/* Show dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}

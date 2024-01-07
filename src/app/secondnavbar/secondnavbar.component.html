@@ -1,1 +1,14 @@
-<p>secondnavbar works!</p>
+<!-- navbar.component.html -->
+
+<nav class="navbar">
+  <div class="nav-item" (mouseover)="showDropdown = false">Home</div>
+  <div class="nav-item dropdown" (mouseover)="showDropdown = true" (mouseout)="showDropdown = false">
+    Services
+    <div *ngIf="showDropdown" class="dropdown-content" (mouseover)="showDropdown = true" (mouseout)="showDropdown = false">
+      <div class="dropdown-item" (click)="selectService('Service 1')">Service 1</div>
+      <div class="dropdown-item" (click)="selectService('Service 2')">Service 2</div>
+      <div class="dropdown-item" (click)="selectService('Service 3')">Service 3</div>
+    </div>
+  </div>
+  <div class="nav-item" (mouseover)="showDropdown = false">Contact</div>
+</nav>
