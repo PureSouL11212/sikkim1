@@ -31,7 +31,8 @@
     display: flex;
     align-items: center; /* Vertically align buttons */
     position: absolute; /* Position buttons absolutely */
-    right: 0; /* Position buttons at the left edge */
+    right: 0; 
+    bottom: 0;/* Position buttons at the left edge */
   }
   
   
