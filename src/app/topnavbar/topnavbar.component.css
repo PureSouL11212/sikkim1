@@ -24,8 +24,14 @@
     font-weight: bold;
   }
   .navbar-text1 {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bolder; /* Adjust text size as needed */
+  }
+  .navbar-buttons {
+    display: flex;
+    align-items: center; /* Vertically align buttons */
+    position: absolute; /* Position buttons absolutely */
+    right: 0; /* Position buttons at the left edge */
   }
   
   
