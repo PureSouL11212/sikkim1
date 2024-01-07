@@ -1,7 +1,7 @@
 .navbar {
     height: 185px; 
     background-color: #f0f0f0; 
-    position: fixed; 
+    
     top: 0;
     width: 100%;
     z-index: 100; 
@@ -32,7 +32,10 @@
     align-items: center; 
     position: absolute; 
     right: 0; 
-    bottom: 0;
+    /* bottom: 0; */
+    
+    width:200px;
+    height:280px;
    
     
   }
