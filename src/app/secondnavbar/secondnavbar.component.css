@@ -20,7 +20,7 @@
 
 .nav-links {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .nav-link, .drop-down li {
