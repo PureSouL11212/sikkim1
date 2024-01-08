@@ -174,7 +174,7 @@ style="
 
   <br />
   <br />
-  <hr>
+  <hr />
   <p
     style="
       text-align: center;
@@ -185,7 +185,7 @@ style="
       text-decoration: underline;
     "
   >
-   Room Details
+    Room Details
   </p>
   <br />
   <div
@@ -197,16 +197,22 @@ style="
       gap: 0.6rem;
     "
   >
-    <label for="name">House<br> Type :</label><br />
+    <label for="name"
+      >House<br />
+      Type :</label
+    ><br />
     <input type="text" />
     <br />
     <br />
-    <label for="">Room<br> Type</label><br />
+    <label for=""
+      >Room<br />
+      Type</label
+    ><br />
     <input type="text" />
     <br />
     <br />
   </div>
-  <br /> 
+  <br />
   <div
     class="two"
     style="
@@ -220,9 +226,9 @@ style="
     <input type="Number" />
     <br />
     <br />
-    <label for=""
-      >
-      Net<br> Amount:</label
+    <label for="">
+      Net<br />
+      Amount:</label
     ><br />
     <input type="name" />
     <br />
@@ -279,7 +285,6 @@ style="
       <select name="cars" id="cars">
         <option value="volvo">single</option>
         <option value="saab">double</option>
-       
       </select>
     </div>
     <div>
@@ -294,9 +299,7 @@ style="
     </div>
   </div>
 
-
-
-<hr>
+  <hr />
   <p
     style="
       text-align: center;
@@ -307,7 +310,7 @@ style="
       text-decoration: underline;
     "
   >
-   Room Details
+    Other Services
   </p>
   <br />
   <div
@@ -319,100 +322,110 @@ style="
       gap: 0.6rem;
     "
   >
-    <label for="name">House<br> Type :</label><br />
-    <input type="text" />
-    <br />
-    <br />
-    <label for="">Room<br> Type</label><br />
-    <input type="text" />
+    <label for="cars"
+      >Extra material<br />
+      Required?:</label
+    >
+    <select name="cars" id="cars">
+      <option value="volvo">Yes</option>
+      <option value="saab">No</option>
+    </select>
     <br />
     <br />
   </div>
-  <br /> 
+  <br />
+<br>
   <div
+  class="two"
+  style="
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.5rem;
+  "
+>
+  
+  <br>
+  <label for="cars"
+  >Number of days extra<br />
+  mattress used :</label
+>
+<select name="cars" id="cars">
+  <option value="volvo">1-2</option>
+  <option value="saab">3-4</option>
+</select>
+  <br />
+  <label for="cars"
+  >Daily <br> Charge
+  </label
+>
+<input type="number">
+
+  <br />
+  <label for="cars"
+  >Total:
+  </label
+>
+<input type="number">
+  <br>
+</div>
+<br>
+<br>
+
+<div
     class="two"
     style="
       display: flex;
       flex-direction: row;
       justify-content: center;
-      gap: 0.4rem;
+      gap: 0.6rem;
     "
   >
-    <label for="name">Rate: </label><br />
-    <input type="Number" />
-    <br />
-    <br />
-    <label for=""
-      >
-      Net<br> Amount:</label
-    ><br />
-    <input type="name" />
+    <label for="cars"
+      >Pantry Service <br>Reqired?
+      :</label
+    >
+    <select name="cars" id="cars">
+      <option value="volvo">Yes</option>
+      <option value="saab">No</option>
+    </select>
     <br />
     <br />
   </div>
+  <br />
+<br>
+  <div
+  class="two"
+  style="
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.5rem;
+  "
+>
+  
+  <br>
+  <label for="cars"
+  >Daily Charge 
+  </label
+>
+<input type="text" value="100">
   <br />
 
-  <div
-    class="two"
-    style="
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      gap: 1rem;
-    "
-  >
-    <label for="name">Discount:</label>
-    <input type="number" />
-    <br />
-    <br />
-    <label for="">phone<br />CGST:</label>
-    <input type="number" />
-    <br />
-  </div>
   <br />
-  <div
-    class="two"
-    style="
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      gap: 0.5rem;
-    "
-  >
-    <label for="name">SGST:</label><br />
-    <input type="text" />
-    <br />
-    <br />
-    <label for="">TOTAL:</label><br />
-    <input type="number" />
-    <br />
-  </div>
-  <br />
-  <div
-    style="
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      gap: 7.5rem;
-    "
-  >
-    <div>
-      <label for="cars">ROOM TYPE:</label>
-      <select name="cars" id="cars">
-        <option value="volvo">single</option>
-        <option value="saab">double</option>
-       
-      </select>
+  <label for="cars"
+  >Total:
+  </label
+>
+<input type="number">
+  <br>
+  
+</div>
+ 
+<br>
+  <br>
+  <div class="one" style="display: flex; justify-content:center">
+    <button (click)="onSubmit()">Submit</button>
     </div>
-    <div>
-      <label for="cars">Room No.:</label>
-      <select name="cars" id="cars">
-        <option value="volvo">1-10</option>
-        <option value="volvo">20-30</option>
-      </select>
-      <!-- <div class="one">
- <button (click)="onSubmit()">Submit</button>
-</div> -->
-    </div>
-  </div>
+  
 </div>
