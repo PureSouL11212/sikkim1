@@ -11,7 +11,7 @@
   }
   
   .box {
-    background-color: #f2f2f2;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 5px;
     padding: 20px;
     text-align: center;
@@ -24,7 +24,7 @@
   }
   
   .left-box {
-    margin-right: 50px;
+    margin-right: 0px;
   }
   
   .name {
