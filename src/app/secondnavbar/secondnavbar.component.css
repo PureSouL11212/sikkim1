@@ -1,6 +1,7 @@
 
 *{
   width:auto;
+  height:auto;
 }
 .container {
   display: flex; 

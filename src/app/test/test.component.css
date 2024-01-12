@@ -1,0 +1,19 @@
+/* app.component.css */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .box {
+    border: 1px solid black;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition: transform .2s;
+  }
+  
+  .box:hover {
+    transform: scale(1.1);
+  }
+  

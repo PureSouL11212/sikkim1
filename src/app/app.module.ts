@@ -9,6 +9,7 @@ import { SecondnavbarComponent } from './secondnavbar/secondnavbar.component';
 import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { NewbodyComponent } from './newbody/newbody.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NewbodyComponent } from './newbody/newbody.component';
     SecondnavbarComponent,
     BodyComponent,
     FooterComponent,
-    NewbodyComponent
+    NewbodyComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
